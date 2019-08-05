@@ -1,4 +1,4 @@
-William Sands 31437387
+William Sands
 
 Project Overview-
 	In this project, we are asked to build a map off of a text file input, given all roads, and intersections, along with the Long. and Latt. data for each intersections, and what intersections each
