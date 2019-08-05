@@ -20,7 +20,7 @@ Expected runtime of plotting map
     two endpoint coordinates on the coordinate grid (takes average O(n) time where n is the number of edges).   
 
 Expected runtime of the shortest path
-    Since I used a min-heap for the shortest path, the runtime of finding the shortest path is (O((E+V)*logV) where E is Edges and V is vertex) since adding all vertex takes V time, pulling a vertex 
+    Since I used a min-heap for the shortest path, the runtime of finding the shortest path is O((E+V)*logV) where E is Edges and V is vertex) since adding all vertex takes V time, pulling a vertex 
     and replacing in the queue takes logV time since I am using a min-heap as my priority queue. At most, these removals and inserts happen for all of the edges pointing to a vertex, making this a 
     ElogV operation. Since the program goes through and removes all vertex and then checks to see if the queue is empty, this will take VlogV time. Adding these two operations together, we get 
     ElogV for updating distance, and VlogV for pulling vertex and checking if the queue is empty -> ElogV+VlogV or (E+V)logV. That is how I solved for the runtime. 
